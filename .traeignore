@@ -1,0 +1,30 @@
+# Configurações para mensagens de commit
+commit_message:
+  # Idioma das mensagens
+  language: "pt-BR"
+
+  # Formato do commit
+  format: "<tipo>: <descrição>"
+
+  # Tipos de commit permitidos
+  types:
+    - feat # Nova funcionalidade
+    - fix # Correção de bug
+    - docs # Documentação
+    - style # Formatação
+    - refactor # Refatoração
+    - test # Testes
+    - chore # Tarefas de build/config
+
+  # Comprimento máximo do título
+  title_max_length: 50
+
+  # Comprimento máximo do corpo
+  body_max_length: 72
+
+  # Palavras a serem evitadas
+  avoid_words:
+    - "ajuste"
+    - "update"
+    - "alteração"
+    - "mudança"

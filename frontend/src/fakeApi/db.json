@@ -1,0 +1,490 @@
+{
+    "jornadas": [
+        {
+            "uid": "lang-1",
+            "linguagem": {
+                "cor": "#ffff00",
+                "nome": "JavaScript",
+                "url": "https://2ality.com/2011/10/logo-js/js.jpg"
+            },
+            "progresso_percent": 75
+        },
+        {
+            "uid": "lang-2",
+            "linguagem": {
+                "cor": "#3178c6",
+                "nome": "TypeScript",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+            },
+            "progresso_percent": 60
+        },
+        {
+            "uid": "lang-3",
+            "linguagem": {
+                "cor": "#61dafb",
+                "nome": "React",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+            },
+            "progresso_percent": 45
+        },
+        {
+            "uid": "lang-4",
+            "linguagem": {
+                "cor": "#339933",
+                "nome": "Node.js",
+                "url": "https://nodejs.org/static/images/logo.svg"
+            },
+            "progresso_percent": 80
+        },
+        {
+            "uid": "lang-5",
+            "linguagem": {
+                "cor": "#4B8BBE",
+                "nome": "Python",
+                "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngteam.com%2Fimages%2Fpython-logo-png-1024x1024_7d6af8d1_transparent_2023e8.png.png&f=1&nofb=1&ipt=0bdf63f9293fbefeccbcd3ca15802c88c35b6a7f6970ee56f783e7db9834779b"
+            },
+            "progresso_percent": 65
+        },
+        {
+            "uid": "lang-6",
+            "linguagem": {
+                "cor": "#FF4500",
+                "nome": "Rust",
+                "url": "https://www.rust-lang.org/logos/rust-logo-512x512.png"
+            },
+            "progresso_percent": 30
+        },
+        {
+            "uid": "lang-7",
+            "linguagem": {
+                "cor": "#F05032",
+                "nome": "Git",
+                "url": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+            },
+            "progresso_percent": 85
+        },
+        {
+            "uid": "lang-8",
+            "linguagem": {
+                "cor": "#007ACC",
+                "nome": "Visual Studio Code",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
+            },
+            "progresso_percent": 70
+        },
+        {
+            "uid": "lang-9",
+            "linguagem": {
+                "cor": "#E34F26",
+                "nome": "HTML5",
+                "url": "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+            },
+            "progresso_percent": 90
+        },
+        {
+            "uid": "lang-10",
+            "linguagem": {
+                "cor": "#1572B6",
+                "nome": "CSS3",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+            },
+            "progresso_percent": 75
+        },
+        {
+            "uid": "lang-11",
+            "linguagem": {
+                "cor": "#00ADD8",
+                "nome": "Go",
+                "url": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png"
+            },
+            "progresso_percent": 40
+        },
+        {
+            "uid": "lang-12",
+            "linguagem": {
+                "cor": "#F7DF1E",
+                "nome": "Vue.js",
+                "url": "https://vuejs.org/images/logo.png"
+            },
+            "progresso_percent": 55
+        },
+        {
+            "uid": "lang-13",
+            "linguagem": {
+                "cor": "#FF6C37",
+                "nome": "Postman",
+                "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.stickpng.com%2Fimages%2F62cc1b3a150d5de9a3dad5f7.png&f=1&nofb=1&ipt=dd29cbffa2975392bab5527357dc1a294e7ef6095991e9ac0a3d6375810f43a4"
+            },
+            "progresso_percent": 65
+        },
+        {
+            "uid": "lang-14",
+            "linguagem": {
+                "cor": "#2496ED",
+                "nome": "Docker",
+                "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F02%2FDocker-Emblem.png&f=1&nofb=1&ipt=efd4637c3360ded1424ed8dcd6ec0f262c56d4b48e04ba42dca9aa6975eef0e3"
+            },
+            "progresso_percent": 50
+        },
+        {
+            "uid": "lang-15",
+            "linguagem": {
+                "cor": "#764ABC",
+                "nome": "Redux",
+                "url": "https://redux.js.org/img/redux.svg"
+            },
+            "progresso_percent": 45
+        }
+    ],
+    "linguagens": [
+        {
+            "uid": "lang-1",
+            "nome": "JavaScript",
+            "cor": "#F7DF1E",
+            "url": "https://2ality.com/2011/10/logo-js/js.jpg"
+        },
+        {
+            "uid": "lang-2",
+            "nome": "Go",
+            "cor": "#00ADD8",
+            "url": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png"
+        },
+        {
+            "uid": "lang-3",
+            "nome": "Vue.js",
+            "cor": "#F7DF1E",
+            "url": "https://vuejs.org/images/logo.png"
+        },
+        {
+            "uid": "lang-4",
+            "nome": "Postman",
+            "cor": "#FF6C37",
+            "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.stickpng.com%2Fimages%2F62cc1b3a150d5de9a3dad5f7.png&f=1&nofb=1&ipt=dd29cbffa2975392bab5527357dc1a294e7ef6095991e9ac0a3d6375810f43a4"
+        },
+        {
+            "uid": "lang-5",
+            "nome": "Docker",
+            "cor": "#2496ED",
+            "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F02%2FDocker-Emblem.png&f=1&nofb=1&ipt=efd4637c3360ded1424ed8dcd6ec0f262c56d4b48e04ba42dca9aa6975eef0e3"
+        },
+        {
+            "uid": "lang-6",
+            "nome": "Redux",
+            "cor": "#764ABC",
+            "url": "https://redux.js.org/img/redux.svg"
+        },
+        {
+            "uid": "lang-7",
+            "nome": "JavaScript",
+            "cor": "#F7DF1E",
+            "url": "https://2ality.com/2011/10/logo-js/js.jpg"
+        },
+        {
+            "uid": "lang-8",
+            "nome": "Go",
+            "cor": "#00ADD8",
+            "url": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png"
+        },
+        {
+            "uid": "lang-9",
+            "nome": "Vue.js",
+            "cor": "#F7DF1E",
+            "url": "https://vuejs.org/images/logo.png"
+        },
+        {
+            "uid": "lang-10",
+            "nome": "Postman",
+            "cor": "#FF6C37",
+            "url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.stickpng.com%2Fimages%2F62cc1b3a150d5de9a3dad5f7.png&f=1&nofb=1&ipt=dd29cbffa2975392bab5527357dc1a294e7ef6095991e9ac0a3d6375810f43a4"
+        }
+    ],
+    "conteudoJornada": [
+        {
+            "uid": "lang-1",
+            "jornada": {
+                "linguagem": {
+                    "cor": "#ffff00",
+                    "nome": "JavaScript",
+                    "url": "https://2ality.com/2011/10/logo-js/js.jpg",
+                    "sigla": "javascript"
+                },
+                "progresso_percent": 75
+            },
+            "roadmap": [
+                {
+                    "uid": "roadmap-1",
+                    "title": "Introdução ao JavaScript",
+                    "concluido": false,
+                    "subtopicos": [
+                        {
+                            "title": "O que é JavaScript?",
+                            "concluido": true,
+                            "conteudo": {
+                                "topico": "O que é JavaScript, por que foi criado?",
+                                "detalhes": "JavaScript é uma linguagem de programação que foi criada para adicionar interatividade às páginas da web. Ela foi criada por Brendan Eich em 1995 e é uma das principais linguagens usadas no desenvolvimento web.",
+                                "anexos": [
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction"
+                                    },
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript"
+                                    },
+                                    {
+                                        "tipo": "video",
+                                        "url": "https://www.youtube.com/watch?v=Ptbk2af68e8"
+                                    }
+                                ],
+                                "exemplos": [
+                                    {
+                                        "titulo": "Primeiro código em JavaScript",
+                                        "codigo": "console.log('Olá, mundo!');"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Sintaxe básica",
+                            "concluido": false,
+                            "conteudo": {
+                                "topico": "Variáveis e tipos de dados",
+                                "detalhes": "Aprenda sobre declaração de variáveis (var, let, const) e os tipos de dados básicos em JavaScript (number, string, boolean, null, undefined, object).",
+                                "anexos": [
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Grammar_and_types"
+                                    },
+                                    {
+                                        "tipo": "video",
+                                        "url": "https://www.youtube.com/watch?v=Vbabsye7mWo"
+                                    }
+                                ],
+                                "exemplos": [
+                                    {
+                                        "titulo": "Declaração de variáveis",
+                                        "codigo": "let nome = 'João';\nconst idade = 25;\nvar profissao = 'Desenvolvedor';"
+                                    },
+                                    {
+                                        "titulo": "Tipos de dados",
+                                        "codigo": "let numero = 42;\nlet texto = 'Olá';\nlet booleano = true;\nlet nulo = null;\nlet indefinido = undefined;\nlet objeto = { nome: 'João', idade: 25 };"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Estruturas de controle",
+                            "concluido": false,
+                            "conteudo": {
+                                "topico": "Condicionais e loops",
+                                "detalhes": "Explore as estruturas de controle como if/else, switch, for, while, e do...while para controlar o fluxo do seu código.",
+                                "anexos": [
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
+                                    },
+                                    {
+                                        "tipo": "video",
+                                        "url": "https://www.youtube.com/watch?v=2GmuRmJ7Jw0"
+                                    }
+                                ],
+                                "exemplos": [
+                                    {
+                                        "titulo": "If/Else",
+                                        "codigo": "if (idade >= 18) {\n    console.log('Maior de idade');\n} else {\n    console.log('Menor de idade');\n}"
+                                    },
+                                    {
+                                        "titulo": "For Loop",
+                                        "codigo": "for (let i = 0; i < 5; i++) {\n    console.log(i);\n}"
+                                    },
+                                    {
+                                        "titulo": "While Loop",
+                                        "codigo": "let contador = 0;\nwhile (contador < 5) {\n    console.log(contador);\n    contador++;\n}"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Funções",
+                            "concluido": false,
+                            "conteudo": {
+                                "topico": "Declaração e uso de funções",
+                                "detalhes": "Aprenda a criar e usar funções, incluindo funções anônimas, arrow functions e métodos de objetos.",
+                                "anexos": [
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions"
+                                    },
+                                    {
+                                        "tipo": "video",
+                                        "url": "https://www.youtube.com/watch?v=mc3TKp2XzhI"
+                                    }
+                                ],
+                                "exemplos": [
+                                    {
+                                        "titulo": "Função tradicional",
+                                        "codigo": "function somar(a, b) {\n    return a + b;\n}\n\nconsole.log(somar(5, 3)); // 8"
+                                    },
+                                    {
+                                        "titulo": "Arrow Function",
+                                        "codigo": "const multiplicar = (a, b) => a * b;\n\nconsole.log(multiplicar(4, 2)); // 8"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Manipulação do DOM",
+                            "concluido": false,
+                            "conteudo": {
+                                "topico": "Interagindo com elementos HTML",
+                                "detalhes": "Entenda como selecionar, modificar e criar elementos HTML dinamicamente usando JavaScript.",
+                                "anexos": [
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction"
+                                    },
+                                    {
+                                        "tipo": "video",
+                                        "url": "https://www.youtube.com/watch?v=WWZX8RWLxIk"
+                                    }
+                                ],
+                                "exemplos": [
+                                    {
+                                        "titulo": "Selecionando elementos",
+                                        "codigo": "const elemento = document.getElementById('meuElemento');\nconst elementos = document.getElementsByClassName('minhaClasse');\nconst tag = document.getElementsByTagName('div');"
+                                    },
+                                    {
+                                        "titulo": "Modificando conteúdo",
+                                        "codigo": "const titulo = document.querySelector('h1');\ntitulo.textContent = 'Novo título';\ntitulo.style.color = 'blue';"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "uid": "roadmap-2",
+                    "title": "JavaScript Avançado",
+                    "concluido": false,
+                    "subtopicos": [
+                        {
+                            "title": "Programação Orientada a Objetos",
+                            "concluido": false,
+                            "conteudo": {
+                                "topico": "Classes e Objetos",
+                                "detalhes": "Aprenda sobre a criação e uso de classes, herança, encapsulamento e polimorfismo em JavaScript.",
+                                "anexos": [
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes"
+                                    },
+                                    {
+                                        "tipo": "video",
+                                        "url": "https://www.youtube.com/watch?v=2PMuBQ7LyOw"
+                                    }
+                                ],
+                                "exemplos": [
+                                    {
+                                        "titulo": "Criando uma classe",
+                                        "codigo": "class Pessoa {\n    constructor(nome, idade) {\n        this.nome = nome;\n        this.idade = idade;\n    }\n\n    falar() {\n        console.log(`Olá, meu nome é ${this.nome}`);\n    }\n}\n\nconst pessoa = new Pessoa('João', 25);\npessoa.falar();"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Programação Assíncrona",
+                            "concluido": false,
+                            "conteudo": {
+                                "topico": "Promises, Async/Await",
+                                "detalhes": "Explore técnicas avançadas para lidar com operações assíncronas em JavaScript.",
+                                "anexos": [
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/async_function"
+                                    },
+                                    {
+                                        "tipo": "video",
+                                        "url": "https://www.youtube.com/watch?v=6lbBaM18X3g"
+                                    }
+                                ],
+                                "exemplos": [
+                                    {
+                                        "titulo": "Promise",
+                                        "codigo": "const minhaPromise = new Promise((resolve, reject) => {\n    setTimeout(() => {\n        resolve('Operação concluída!');\n    }, 2000);\n});\n\nminhaPromise\n    .then(resultado => console.log(resultado))\n    .catch(erro => console.error(erro));"
+                                    },
+                                    {
+                                        "titulo": "Async/Await",
+                                        "codigo": "async function buscarDados() {\n    try {\n        const response = await fetch('https://api.exemplo.com/dados');\n        const dados = await response.json();\n        console.log(dados);\n    } catch (erro) {\n        console.error('Erro ao buscar dados:', erro);\n    }\n}\n\nbuscarDados();"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "uid": "roadmap-3",
+                    "title": "Frameworks e Bibliotecas",
+                    "concluido": false,
+                    "subtopicos": [
+                        {
+                            "title": "React",
+                            "concluido": false,
+                            "conteudo": {
+                                "topico": "Introdução ao React",
+                                "detalhes": "Aprenda os conceitos básicos do React, incluindo componentes, props e state.",
+                                "anexos": [
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://reactjs.org/docs/getting-started.html"
+                                    },
+                                    {
+                                        "tipo": "video",
+                                        "url": "https://www.youtube.com/watch?v=sBws8MSXN7A"
+                                    }
+                                ],
+                                "exemplos": [
+                                    {
+                                        "titulo": "Componente Funcional",
+                                        "codigo": "import React from 'react';\n\nfunction Saudacao({ nome }) {\n    return <h1>Olá, {nome}!</h1>;\n}\n\nexport default Saudacao;"
+                                    },
+                                    {
+                                        "titulo": "Usando Hooks",
+                                        "codigo": "import React, { useState, useEffect } from 'react';\n\nfunction Contador() {\n    const [contador, setContador] = useState(0);\n\n    useEffect(() => {\n        document.title = `Contador: ${contador}`;\n    }, [contador]);\n\n    return (\n        <div>\n            <p>Contador: {contador}</p>\n            <button onClick={() => setContador(contador + 1)}>\n                Incrementar\n            </button>\n        </div>\n    );\n}"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Vue.js",
+                            "concluido": false,
+                            "conteudo": {
+                                "topico": "Fundamentos do Vue.js",
+                                "detalhes": "Explore os conceitos fundamentais do Vue.js, incluindo diretivas, componentes e reatividade.",
+                                "anexos": [
+                                    {
+                                        "tipo": "documentacao",
+                                        "url": "https://vuejs.org/v2/guide/"
+                                    },
+                                    {
+                                        "tipo": "video",
+                                        "url": "https://www.youtube.com/watch?v=wsAQQioPIJs"
+                                    }
+                                ],
+                                "exemplos": [
+                                    {
+                                        "titulo": "Componente Vue",
+                                        "codigo": "<template>\n    <div>\n        <h1>{{ titulo }}</h1>\n        <p>{{ mensagem }}</p>\n        <button @click=\"incrementar\">Contador: {{ contador }}</button>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            titulo: 'Meu Componente Vue',\n            mensagem: 'Bem-vindo!',\n            contador: 0\n        }\n    },\n    methods: {\n        incrementar() {\n            this.contador++\n        }\n    }\n}\n</script>"
+                                    },
+                                    {
+                                        "titulo": "Computed Properties",
+                                        "codigo": "<template>\n    <div>\n        <input v-model=\"nome\" placeholder=\"Digite seu nome\">\n        <p>Nome invertido: {{ nomeInvertido }}</p>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            nome: ''\n        }\n    },\n    computed: {\n        nomeInvertido() {\n            return this.nome.split('').reverse().join('')\n        }\n    }\n}\n</script>"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
