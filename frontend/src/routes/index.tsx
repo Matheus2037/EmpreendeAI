@@ -6,6 +6,11 @@ import { DashboardPage } from "@/app/dashboard";
 import { Redirect } from "@/app";
 import { PrivateLayout } from "@/components/layout/privateLayout";
 import { JornadaPage } from "@/app/jornada";
+import { HomePage } from "@/app/home";
+import { NoticiasPage } from "@/app/noticias";
+import { ConteudosPage } from "@/app/conteudos";
+import { PerfilPage } from "@/app/perfil";
+import { ConfiguracoesPage } from "@/app/configuracoes";
 
 export function AppRoutes() {
   return (
@@ -15,11 +20,15 @@ export function AppRoutes() {
         <Route path="login" element={<LoginPage />} />
         <Route path="registro" element={<RegisterPage />} />
 
-        {/* Private routes */}
         <Route element={<AuthGuard />}>
           <Route element={<PrivateLayout />}>
-            <Route element={<DashboardPage />} path="/dashboard" />
-            <Route element={<JornadaPage />} path="/trilha/:idJornada" />
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
+            <Route path="/noticias" element={<NoticiasPage />} />
+            <Route path="/conteudos" element={<ConteudosPage />} />
+            <Route path="/trilha/:idJornada" element={<JornadaPage />} />
+            <Route path="/perfil" element={<PerfilPage />} />
+            <Route path="/configuracoes" element={<ConfiguracoesPage />} />
           </Route>
         </Route>
       </Routes>

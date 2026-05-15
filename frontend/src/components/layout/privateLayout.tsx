@@ -1,7 +1,6 @@
 import { signOut } from "firebase/auth";
-import { Button } from "../ui/button";
 import { auth } from "@/config/firebase";
-import { Bell, BookOpen, Home, LayoutDashboard, LogOut, Newspaper, TrendingUp } from "lucide-react";
+import { Bell, BookOpen, Home, LayoutDashboard, LogOut, Newspaper, Settings, TrendingUp, UserRound } from "lucide-react";
 import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import { useQueryClient } from "@tanstack/react-query";
 import { useAuthContext } from "@/contexts/auth";
@@ -25,12 +24,24 @@ const NAV_LINKS = [
   { to: "/conteudos", label: "Conteúdos", icon: BookOpen },
 ];
 
+function getInitials(name?: string | null) {
+  if (!name) return "U";
+  return name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .substring(0, 2)
+    .toUpperCase();
+}
+
 export function PrivateLayout() {
   const queryClient = useQueryClient();
-  const { logout } = useAuthContext();
+  const { logout, currentUser } = useAuthContext();
   const navigate = useNavigate();
   const [notifOpen, setNotifOpen] = useState(false);
+  const [accountOpen, setAccountOpen] = useState(false);
   const notifRef = useRef<HTMLDivElement>(null);
+  const accountRef = useRef<HTMLDivElement>(null);
 
   const naoLidas = NOTIFICACOES.filter((n) => !n.lida).length;
 
@@ -38,6 +49,9 @@ export function PrivateLayout() {
     function handleClickOutside(e: MouseEvent) {
       if (notifRef.current && !notifRef.current.contains(e.target as Node)) {
         setNotifOpen(false);
+      }
+      if (accountRef.current && !accountRef.current.contains(e.target as Node)) {
+        setAccountOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
@@ -85,10 +99,8 @@ export function PrivateLayout() {
 
           <div className="flex items-center gap-2 shrink-0">
             <div ref={notifRef} className="relative">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="relative"
+              <button
+                className="relative flex items-center justify-center size-9 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                 onClick={() => setNotifOpen((v) => !v)}
               >
                 <Bell className="size-5" />
@@ -97,7 +109,7 @@ export function PrivateLayout() {
                     {naoLidas}
                   </span>
                 )}
-              </Button>
+              </button>
 
               {notifOpen && (
                 <div className="absolute right-0 top-full mt-2 w-80 bg-card border border-border rounded-xl shadow-xl z-50 overflow-hidden">
@@ -132,10 +144,51 @@ export function PrivateLayout() {
               )}
             </div>
 
-            <Button variant="outline" size="sm" onClick={handleLogout}>
-              Sair
-              <LogOut className="size-4" />
-            </Button>
+            <div ref={accountRef} className="relative">
+              <button
+                onClick={() => setAccountOpen((v) => !v)}
+                className="flex items-center justify-center size-9 rounded-full bg-primary/15 text-primary hover:bg-primary/25 transition-colors text-xs font-bold select-none"
+                aria-label="Menu da conta"
+              >
+                {getInitials(currentUser?.displayName)}
+              </button>
+
+              {accountOpen && (
+                <div className="absolute right-0 top-full mt-2 w-56 bg-card border border-border rounded-xl shadow-xl z-50 overflow-hidden">
+                  <div className="px-4 py-3 border-b border-border">
+                    <p className="font-semibold text-sm truncate">{currentUser?.displayName}</p>
+                    <p className="text-xs text-muted-foreground truncate">{currentUser?.email}</p>
+                  </div>
+                  <div className="py-1">
+                    <Link
+                      to="/perfil"
+                      onClick={() => setAccountOpen(false)}
+                      className="flex items-center gap-2 px-4 py-2 text-sm text-foreground hover:bg-muted transition-colors"
+                    >
+                      <UserRound className="size-4 text-muted-foreground" />
+                      Meu Perfil
+                    </Link>
+                    <Link
+                      to="/configuracoes"
+                      onClick={() => setAccountOpen(false)}
+                      className="flex items-center gap-2 px-4 py-2 text-sm text-foreground hover:bg-muted transition-colors"
+                    >
+                      <Settings className="size-4 text-muted-foreground" />
+                      Configurações
+                    </Link>
+                  </div>
+                  <div className="border-t border-border py-1">
+                    <button
+                      onClick={handleLogout}
+                      className="flex items-center gap-2 px-4 py-2 text-sm text-destructive hover:bg-destructive/10 transition-colors w-full"
+                    >
+                      <LogOut className="size-4" />
+                      Sair
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </header>
