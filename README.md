@@ -1,6 +1,8 @@
-# EmpreendeAI — OwlCode
+# EmpreendeAI
 
-Plataforma de aprendizado de programação personalizada com IA. Gera roadmaps de estudo, exercícios e chat de dúvidas com base no perfil do usuário.
+Plataforma de aprendizado de programação personalizada com IA. Gera roadmaps de estudo, exercícios práticos e chat de dúvidas com base no perfil do usuário.
+
+> Este projeto é uma pivotagem do [OwlCode](https://github.com/Gu1lherme-Gama/owl-code), expandindo o escopo para uma experiência de aprendizado completa e integrada.
 
 ## Estrutura do repositório
 
@@ -20,7 +22,7 @@ EmpreendeAI/
 ```bash
 cd backend
 pnpm install
-cp .env.example .env   # preencha as variáveis (veja backend/README.md)
+cp .env.example .env   # preencha as variáveis
 pnpm start:dev         # sobe na porta 3000
 ```
 
