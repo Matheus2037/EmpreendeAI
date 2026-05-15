@@ -59,7 +59,7 @@ export function ChatJornada() {
   }
 
   return (
-    <section className="size-full max-h-[calc(100vh-270px)] max-w-[26rem] h-full bg-card rounded-xl p-6 flex flex-col border border-border">
+    <section className="w-[26rem] shrink-0 min-h-0 bg-card rounded-xl p-6 flex flex-col border border-border">
       <h2 className="text-lg font-semibold text-center mb-1">Mentor IA</h2>
       <p className="text-xs text-muted-foreground text-center mb-5">
         Pergunte sobre empreendedorismo e soft skills

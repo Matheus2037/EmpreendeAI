@@ -25,18 +25,20 @@ export function Roadmap({
   );
 
   return (
-    <section className="flex-1">
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        nodeTypes={nodeTypes}
-        nodesDraggable={false}
-        nodesConnectable={false}
-        attributionPosition="top-right"
-        zoomOnDoubleClick={false}
-      >
-        <Background />
-      </ReactFlow>
+    <section className="flex-1 relative">
+      <div className="absolute inset-0">
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          nodeTypes={nodeTypes}
+          nodesDraggable={false}
+          nodesConnectable={false}
+          attributionPosition="top-right"
+          zoomOnDoubleClick={false}
+        >
+          <Background />
+        </ReactFlow>
+      </div>
     </section>
   );
 }
