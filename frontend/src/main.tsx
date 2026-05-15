@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
     <AuthProvider>
       <PersistQueryClientProvider
         client={queryClient}
-        persistOptions={{ persister }}
+        persistOptions={{ persister, buster: "v2" }}
       >
         <AppRoutes />
       </PersistQueryClientProvider>

@@ -124,17 +124,17 @@ export function DashboardPage() {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-5 justify-start pb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pb-10">
           {isLoading ? (
             Array.from({ length: 3 }).map((_, i) => (
-              <Skeleton key={i} className="w-card h-48 rounded-xl" />
+              <Skeleton key={i} className="h-48 rounded-xl" />
             ))
           ) : dadosFiltrados.length > 0 ? (
             dadosFiltrados.map((jornada) => (
               <LinguageCard key={jornada.uid} data={jornada} />
             ))
           ) : (
-            <div className="flex flex-col items-center gap-3 py-16 w-full text-center text-muted-foreground">
+            <div className="col-span-full flex flex-col items-center gap-3 py-16 text-center text-muted-foreground">
               <span className="text-4xl">🔍</span>
               <p className="text-base font-medium">Nenhuma trilha encontrada.</p>
               <p className="text-sm">Tente ajustar os filtros ou crie uma nova trilha.</p>
