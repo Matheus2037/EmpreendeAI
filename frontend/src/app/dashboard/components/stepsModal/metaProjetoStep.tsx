@@ -5,18 +5,14 @@ type MetaProjetoStepProps = {
   setMetaProjeto: (metaProjeto: string) => void;
 };
 
-export function MetaProjetoStep({
-  metaProjeto,
-  setMetaProjeto,
-}: MetaProjetoStepProps) {
+export function MetaProjetoStep({ metaProjeto, setMetaProjeto }: MetaProjetoStepProps) {
   return (
     <div className="space-y-4">
       <p className="text-sm text-muted-foreground">
-        Qual sua meta de projeto/desafio pessoal?
+        Qual é a sua meta concreta para os próximos 3 meses? (opcional)
       </p>
       <p className="text-xs text-muted-foreground">
-        Ex: "Criar um CRUD completo em Java", "Desenvolver um mini-jogo
-        orientado a objetos"
+        Ex: "Abrir meu MEI e conseguir os primeiros 5 clientes", "Liderar uma equipe com mais segurança"
       </p>
 
       <Textarea

@@ -5,22 +5,18 @@ type DificuldadeStepProps = {
   setDificuldade: (dificuldade: string) => void;
 };
 
-export function DificuldadeStep({
-  dificuldade,
-  setDificuldade,
-}: DificuldadeStepProps) {
+export function DificuldadeStep({ dificuldade, setDificuldade }: DificuldadeStepProps) {
   return (
     <div className="space-y-4">
       <p className="text-sm text-muted-foreground">
-        Qual sua área de maior dificuldade?
+        Qual é o seu maior desafio ou dificuldade nessa área?
       </p>
       <p className="text-xs text-muted-foreground">
-        Ex: "Como estruturar classes em POO", "Escolher quando usar herança vs.
-        composição"
+        Ex: "Não sei como precificar meu serviço", "Tenho dificuldade em falar em público"
       </p>
 
       <Textarea
-        placeholder="Descreva sua dificuldade"
+        placeholder="Descreva seu desafio"
         value={dificuldade}
         onChange={(e) => setDificuldade(e.target.value)}
         className="min-h-[100px]"

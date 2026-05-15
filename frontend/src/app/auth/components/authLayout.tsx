@@ -6,17 +6,25 @@ type AuthLayoutProps = {
 
 export function AuthLayout({ children, label, onSubmit }: AuthLayoutProps) {
   return (
-    <main className="flex justify-center items-center h-screen">
-      <div className="min-w-lg bg-card p-10 rounded-lg relative">
-        <h1 className="text-3xl font-semibold">{label}</h1>
+    <main className="flex justify-center items-center h-screen bg-background">
+      <div className="min-w-lg bg-card p-10 rounded-2xl shadow-lg relative border border-border">
+        <div className="flex flex-col items-center mb-8">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-3xl font-bold text-primary tracking-tight">
+              Empreende
+            </span>
+            <span className="text-3xl font-bold text-foreground tracking-tight">
+              AI
+            </span>
+          </div>
+          <p className="text-sm text-muted-foreground text-center max-w-xs">
+            Desenvolva as competências para empreender e crescer profissionalmente
+          </p>
+        </div>
 
-        <img
-          src="/mascote.png"
-          alt="owl-logo"
-          className="size-40 absolute -top-30 left-1/2 transform -translate-x-1/2"
-        />
+        <h2 className="text-xl font-semibold mb-1">{label}</h2>
 
-        <form className="flex flex-col gap-5 mt-10" onSubmit={onSubmit}>
+        <form className="flex flex-col gap-5 mt-4" onSubmit={onSubmit}>
           {children}
         </form>
       </div>

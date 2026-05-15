@@ -19,7 +19,7 @@ export function AppRoutes() {
         <Route element={<AuthGuard />}>
           <Route element={<PrivateLayout />}>
             <Route element={<DashboardPage />} path="/dashboard" />
-            <Route element={<JornadaPage />} path="/jornada/:idJornada" />
+            <Route element={<JornadaPage />} path="/trilha/:idJornada" />
           </Route>
         </Route>
       </Routes>

@@ -23,7 +23,7 @@ export function ExperienciaStep({
   return (
     <div className="space-y-4">
       <p className="text-sm text-muted-foreground">
-        Qual sua experiência específica na linguagem?
+        Há quanto tempo você se interessa ou atua nessa área?
       </p>
 
       <Select value={experiencia} onValueChange={setExperiencia}>
@@ -31,17 +31,17 @@ export function ExperienciaStep({
           <SelectValue placeholder="Selecione sua experiência" />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="nenhuma">Nenhuma</SelectItem>
-          <SelectItem value="1 a 3 meses">1–3 meses</SelectItem>
-          <SelectItem value="3 a 6 meses">3–6 meses</SelectItem>
-          <SelectItem value="+6 meses">+6 meses</SelectItem>
-          <SelectItem value="outro">Outro</SelectItem>
+          <SelectItem value="nenhuma">Estou começando agora</SelectItem>
+          <SelectItem value="1 a 3 meses">Menos de 6 meses</SelectItem>
+          <SelectItem value="3 a 6 meses">6 meses a 1 ano</SelectItem>
+          <SelectItem value="+6 meses">Mais de 1 ano</SelectItem>
+          <SelectItem value="outro">Prefiro descrever</SelectItem>
         </SelectContent>
       </Select>
 
       {experiencia === "outro" && (
         <Input
-          placeholder="Defina seu tempo de experiência"
+          placeholder="Descreva sua experiência"
           value={outroExperiencia}
           onChange={(e) => setOutroExperiencia(e.target.value)}
         />

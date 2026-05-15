@@ -13,9 +13,9 @@ type NivelStepProps = {
 
 export function NivelStep({ nivel, setNivel }: NivelStepProps) {
   return (
-    <div key="step-2" className="space-y-4">
+    <div className="space-y-4">
       <p className="text-sm text-muted-foreground">
-        Qual seu nível geral de programação?
+        Qual é o seu nível de experiência nessa área?
       </p>
 
       <Select value={nivel} onValueChange={setNivel}>
@@ -23,10 +23,10 @@ export function NivelStep({ nivel, setNivel }: NivelStepProps) {
           <SelectValue placeholder="Selecione seu nível" />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="nenhuma">Nenhuma experiência</SelectItem>
-          <SelectItem value="iniciante">Iniciante</SelectItem>
-          <SelectItem value="intermediario">Intermediário</SelectItem>
-          <SelectItem value="avancado">Avançado</SelectItem>
+          <SelectItem value="nenhuma">Nunca estudei o assunto</SelectItem>
+          <SelectItem value="iniciante">Conheço o básico</SelectItem>
+          <SelectItem value="intermediario">Tenho alguma prática</SelectItem>
+          <SelectItem value="avancado">Já apliquei no dia a dia</SelectItem>
         </SelectContent>
       </Select>
     </div>

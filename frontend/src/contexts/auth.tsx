@@ -2,6 +2,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { auth } from "@/config/firebase";
 import { onAuthStateChanged, User } from "firebase/auth";
+import { USUARIO_MOCK } from "@/mocks/usuario";
 
 type AuthContextType = {
   currentUser: User | null;
@@ -17,12 +18,17 @@ export function useAuthContext() {
   return useContext(AuthContext);
 }
 
+const MOCK_MODE = import.meta.env.VITE_MOCK_AUTH === "true";
+
 export function AuthProvider({ children }: React.PropsWithChildren) {
-  const [currentUser, setCurrentUser] =
-    useState<AuthContextType["currentUser"]>(null);
-  const [loading, setLoading] = useState(true);
+  const [currentUser, setCurrentUser] = useState<User | null>(
+    MOCK_MODE ? (USUARIO_MOCK as unknown as User) : null
+  );
+  const [loading, setLoading] = useState(!MOCK_MODE);
 
   useEffect(() => {
+    if (MOCK_MODE) return;
+
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
         const token = await user.getIdToken();
